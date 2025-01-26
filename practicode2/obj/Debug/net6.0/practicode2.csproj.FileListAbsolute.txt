@@ -1,0 +1,16 @@
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\bin\Debug\net6.0\practicode2.exe
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\bin\Debug\net6.0\JSON Files\HtmlTags.json
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\bin\Debug\net6.0\JSON Files\HtmlVoidTags.json
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\bin\Debug\net6.0\practicode2.deps.json
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\bin\Debug\net6.0\practicode2.runtimeconfig.json
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\bin\Debug\net6.0\practicode2.dll
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\bin\Debug\net6.0\practicode2.pdb
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.AssemblyInfoInputs.cache
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.AssemblyInfo.cs
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.csproj.CoreCompileInputs.cache
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.dll
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\refint\practicode2.dll
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.pdb
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.genruntimeconfig.cache
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\ref\practicode2.dll
