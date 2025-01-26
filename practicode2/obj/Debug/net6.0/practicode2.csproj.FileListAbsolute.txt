@@ -14,3 +14,4 @@ C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicod
 C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.pdb
 C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.genruntimeconfig.cache
 C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\ref\practicode2.dll
+C:\Users\שרי כהנא\Desktop\תכנות\שנה ב\פרקטיקוד\practicode2\practicode2\obj\Debug\net6.0\practicode2.sourcelink.json

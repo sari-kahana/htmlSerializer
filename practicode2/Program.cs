@@ -5,70 +5,11 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-async Task<string> Load(string url)
-{
-    HttpClient client = new HttpClient();
-    var response = await client.GetAsync(url);
-    var html = await response.Content.ReadAsStringAsync();
-    return html;
-}
+string s = "<div id=\"a\" \nclass=\"as av an\" src=\"#\">      <p>Hello World</p>    <a href=\"#\"       >Link</a></div>";
+var htmlSerializer = new HtmlSerializer();
+var html = await htmlSerializer.Load("https://hebrewbooks.org/beis");
+var dom = htmlSerializer.Serialize(html);
 
-//var html = await Load("https://hebrewbooks.org");
-var html = "<div id=\"header\">\r\nheader\r\n<a href=\"#\">products\r\n<ul class=\"list\">\r\n<li>new collection</li>\r\n<li>sale</li>\r\n<li>for club members</li>\r\n</ul>\r\n</a>\r\n<a href=\"#\">about us\r\n<ul class=\"list\">\r\n<li>our experience</li>\r\n<li>our custemers</li>\r\n<li>recomandations</li>\r\n</ul>\r\n</a>\r\n\r\n<a href=\"#\">contact us\r\n<ul class=\"list\">\r\n<li>call us</li>\r\n<li>write us</li>\r\n<li>leave a massage</li>\r\n</ul>\r\n</a>\r\n</div>";
-var cleanHtml = new Regex("[\\t\\n\\r\\v\\f]").Replace(html, "");
-var htmlLines = new Regex("<(.*?)>").Split(cleanHtml).Where(s => s.Length > 0);
-
-static HtmlElement BuildTree(IEnumerable htmlLines)
-{
-    HtmlElement rootElement = new HtmlElement() { Name = "html" };
-    var current = rootElement;
-    foreach (string line in htmlLines)
-    {
-        string firstWord = line.Split(' ')[0];
-        if (firstWord.Equals("/html"))
-            return rootElement;
-        else if (firstWord.StartsWith('/'))
-            current = current.Parent != null ? current.Parent : current;
-        else if (HtmlHelper.Helper.HtmlTags.Contains(firstWord) || HtmlHelper.Helper.HtmlVoidTags.Contains(firstWord))
-        {
-            HtmlElement newElement = new HtmlElement() { Name = firstWord, Parent = current };
-            current.Children.Add(newElement);
-            string shortLine = line.Substring(firstWord.Length);
-            var attributes = new Regex("([^\\s]*?)=\"(.*?)\"").Matches(shortLine).ToDictionary(m => m.Groups[1].Value, m => m.Groups[2].Value);
-            newElement.Attributes = attributes;
-            foreach (var attribute in attributes)
-            {
-                if (attribute.Key == "class")
-                {
-                    var classes = attribute.Value.Split(' ');
-                    newElement.Classes = classes.ToList();
-                }
-                else if (attribute.Key == "id")
-                    newElement.Id = attribute.Value;
-            }
-            if (!(shortLine.EndsWith('/') || HtmlHelper.Helper.HtmlVoidTags.Contains(firstWord)))
-                current = newElement;
-        }
-        else
-        {
-            current.InnerHtml = line;
-        }
-    }
-    return rootElement;
-}
-static void PrintTreeHtmlElement(HtmlElement root)
-{
-    if (root == null)
-        return;
-    Console.WriteLine(root.ToString());
-    for (int i = 0; i < root.Children.Count; i++) { PrintTreeHtmlElement(root.Children[i]); }
-}
-var root = BuildTree(htmlLines);
-Selector selector = Selector.QuerySelector("#header");
-var maches = root.FindElements(selector);
-foreach (var m in maches)
-{
-    Console.WriteLine(m);
-}
-
-
+var result = dom.FindElements(Selector.QuerySelector("div.popup div#popupForm.formPopup a"));
+foreach (var item in result)
+    Console.WriteLine(item);

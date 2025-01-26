@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("practicode2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef55e4a29e1f676eab32e97ae4d284b6a53bc0cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("practicode2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("practicode2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
